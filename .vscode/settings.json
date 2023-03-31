@@ -1,0 +1,20 @@
+{
+    "files.autoSave": "afterDelay",
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                // "match": ".*",
+                "match": "\\.md$",
+                "isAsync": true,
+                "cmd": "echo 'I am a .md file ${file}.' && cd ${workspaceFolder}/docs/ && make html"
+            },
+            {
+                "match": "\\.yml$",
+                "isAsync": true,
+                "cmd": "echo 'I am a .yml file ${file}.' && cd ${workspaceFolder}/docs/ && make html"
+            }
+        ]
+    }
+}

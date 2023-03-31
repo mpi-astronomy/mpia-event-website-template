@@ -1,0 +1,19 @@
+# website name
+title: Gaia Unlimited Community Workshop
+# website URL
+baseURL: 'https://localhost:8080'
+
+#theme
+theme: "default"
+# content directory
+sourcedir: "content"
+# Anything to add to the build into a static folder
+staticdir: "static"
+# build directory
+builddir: "_build/html"
+
+# setup markdown options
+markdown:
+  # https://python-markdown.github.io/extensions/
+  extensions:
+    - extra
