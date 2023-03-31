@@ -119,3 +119,9 @@ python -m http.server --directory="docs/_build/html"
 ```
 
 ## Hosted by GitHub Pages
+
+In your repository settings, you need to setup the `Pages` options.
+
+Set the branch to `gh-pages` and save.
+
+The github action script automatically compiles the site into this branch every time a push is performed.
