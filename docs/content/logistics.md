@@ -20,7 +20,7 @@ If you need help with childcare arrangements, don't hesitate to contact us.
 
 ## <i class="fa-solid fa-drumstick-bite"></i> Lunches & Coffee Breaks
 
-The workshop provides lunch and coffee breaks at the venue on all workshop days. Vegetarian options will be available (no need to pre-order). If you have any additional dietary requirements (and may not have indicated so in your registration form), please email [Susanne Koltes-Al-Zoubi](mailto:koltes@mpia-hd.mpg.de) well in advance.
+The workshop provides lunch and coffee breaks at the venue on all workshop days. Vegetarian options will be available (no need to pre-order). If you have any additional dietary requirements (and may not have indicated so in your registration form), please email [THIS PERSON](mailto:NULL) well in advance. We will do our best to meet your needs, but we cannot guarantee that we will cater to every request.
 
 ## <i class="fa-solid fa-champagne-glasses"></i> Workshop dinner
 
