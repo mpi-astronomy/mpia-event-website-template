@@ -1,110 +1,540 @@
-
 <!DOCTYPE html>
+<html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta charset="utf-8" />
-    <title>Welcome to No Errors Test Project’s documentation! &#8212; No Errors Test Project  documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-   
-  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title> MPIA conference website template </title>
 
-  </head><body>
-  
+    <!-- favicon -->
+    <link href="" rel=icon>
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          
+    <!-- Bootstrap -->
+    <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin=anonymous media=print onload="this.media='all'">
+    <link rel=stylesheet href=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css crossorigin=anonymous title=hl-light media=print onload="this.media='all'">
+    <link rel=stylesheet href=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css crossorigin=anonymous title=hl-dark media=print onload="this.media='all'" disabled>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js integrity crossorigin=anonymous async></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-          <div class="body" role="main">
-            
-  <div class="section" id="welcome-to-no-errors-test-project-s-documentation">
-<h1>Welcome to No Errors Test Project’s documentation!<a class="headerlink" href="#welcome-to-no-errors-test-project-s-documentation" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-</div>
-</div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
-<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
-<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
-</ul>
-</div>
+    <!-- Style CSS -->
+    <link href="css/style.css" rel="stylesheet">
 
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
 
-          </div>
-          
+<body id="page-top" data-spy="scroll" data-target=".navbar">
+    <div id="main-wrapper">
+        <!-- Page Preloader -->
+        <div id="preloader">
+            <div id="status">
+                <div class="status-mes"></div>
+            </div>
         </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="#">No Errors Test Project</a></h1>
 
+        <header class="header">
+            <!-- Navigation -->
+            <nav class="navbar main-menu" role="navigation">
+                <div class="container">
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                        <ul class="nav navbar-nav" style="display: flex;flex-wrap: wrap;flex-direction: row;align-content: center;justify-content: space-evenly;">
+                            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                            <li class="hidden"><a href="#page-top"></a></li>
+                            <li><a class="page-scroll" href="#page-top">Home</a></li>
+                            <li><a class="page-scroll" href="#section-help">Help page</a></li>
+<li><a class="page-scroll" href="#section-overview">Overview</a></li>
+<li><a class="page-scroll" href="#section-organizers">Organizers</a></li>
+<li><a class="page-scroll" href="#section-participants">Participants</a></li>
+<li><a class="page-scroll" href="#section-speakers">Speakers</a></li>
+<li><a class="page-scroll" href="#section-programme">Programme</a></li>
+<li><a class="page-scroll" href="#section-venue-mpia">Venue</a></li>
+<li><a class="page-scroll" href="#section-logistics">Logistics</a></li>
+<li><a class="page-scroll" href="#section-travel-mpia">Travel</a></li>
+<li><a class="page-scroll" href="#section-code-of-conduct">Code of conduct</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container -->
+            </nav>
+            <!-- .nav -->
+        </header>
 
+        <div class="jumbotron text-center" id="page-top">
+            <div class="content">
+                <div class="event-date" style="text-shadow: 0px 1px 12px black;"> Date of the event <br><br>Max Planck Institute for Astronomy, Heidelberg, Germany</div><br>
+                <h1 style="text-shadow: 0px 1px 12px black;"> MPIA conference website template </h1>
+                <br><br>
+                <p class="lead" style="text-shadow: 0px 1px 12px black;"> A simple generator using markdown and python </p>
+                <br><br>
+                <a href><img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Max-Planck-Institut_f%C3%BCr_Astronomie_Logo.svg" width="75" height="75" alt=""></a>
+            </div>
+        </div>
+        <!-- .Jumbotron-->
 
+        <!-- Section template -->
+<section id="section-help" class="section-wrapper help ">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h1> Help page </h1>
+            </div>
+            <div class="col-md-12">
+                    <p>This page gives a small guidance about the edition of the pages.</p>
+<h1>Stucture of website</h1>
+<p>The website itself is defined in the <code>docs/content</code> directory and configured via the <code>index.md</code> file (also index page).</p>
+<p>Static files such as specific images should be stored in the <code>docs/static</code> directory.</p>
+<h2>Content in Markdown</h2>
+<p>Any page is defined by a Markdown document (see <a href="https://www.markdownguide.org/cheat-sheet/">Markdown cheatsheet</a>). Markdown is a simple, yet powerful, syntax to generate content.</p>
+<p>Markdown is already a rich text format with simple syntax. It also allows one to use HTML code to extend the content not already covered by Markdown language. In addition to the basic syntax, you can also use icons from the <a href="https://fontawesome.com/icons?d=gallery">Font Awesome</a> and <a href="https://jpswalsh.github.io/academicons/">academicons</a> libraries.</p>
+<h2>YAML Metadata Block</h2>
+<p>We use extensively the YAML front matter extension to store metadata about the individual pages and their configuration (see <a href="https://pandoc.org/MANUAL.html#extension-yaml_metadata_block">extension-yaml_metadata_block</a> introduced by Pandoc). YAML is a very simple (bullet list) syntax  to represent complex structures. The metadata block is the block between <code>---</code> at the top of the files.</p>
+<p>For example, the <code>help</code> page starts with the following metadata block</p>
+<pre><code class="language-yaml">active: True
+title: Help page
+type: section
+</code></pre>
+<p>The actual content of this block is flexible and only needs specific fields depending on the type of page one wants to create.</p>
+<p>One of the important field is <code>active</code> which sets if a page should be included or not when listed in the index page.</p>
+<h2>Index Page</h2>
+<p>The index page is the <code>index.md</code> file (<code>type: index</code>) which defines the event information throughout the site.</p>
+<p>Example of metadata block for the index page:</p>
+<pre><code class="language-yaml">event:  # part of the top banner of the site
+    - title: MPIA conference website template
+    - subtitle: A simple generator using markdown and python
+    - date: Date of the event
+    - venue: Max Planck Institute for Astronomy, Heidelberg, Germany
 
+organizers:
+    - name: The Data Science Team
+    - url: https://github.com/mpi-astronomy
+    - logo: https://upload.wikimedia.org/wikipedia/commons/c/c6/Max-Planck-Institut_f%C3%BCr_Astronomie_Logo.svg  # -- MPIA logo
+    - contact_url: &quot;ds@mpia.de&quot; # -- contact
 
+imprint:
+    - url: http://www.mpia.de/imprint
+    - name: imprint
 
+privacy-policy:
+    - url: http://www.mpia.de/privacy-policy
+    - name: privacy policy
 
-
-<h3>Navigation</h3>
-
-<div class="relations">
-<h3>Related Topics</h3>
+content:   # the content and ordering of the sections
+    - help
+    - overview
+    - organizers
+    - participants
+    - speakers
+    - programme
+    - venue-mpia
+    - logistics
+    - travel-mpia
+    - code-of-conduct
+</code></pre>
+<h2>Other page templates</h2>
+<p>Below we list the differents section types  (e.g., <code>type: section</code> or <code>type: index</code>).</p>
+<table>
+<thead>
+<tr>
+<th>Section Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>section</code></td>
+<td>Base block, a simple freeform section</td>
+</tr>
+<tr>
+<td><code>schedule</code></td>
+<td>The schedule page which takes its content from the metadata</td>
+</tr>
+<tr>
+<td><code>speakers</code></td>
+<td>A speaker list with pictures and information</td>
+</tr>
+</tbody>
+</table>
+<p><i class="fa-solid fa-info"></i> See examples of content and metadata in the <code>docs/content</code> directory.</p>
+<p><i class="fa-regular fa-lightbulb"></i> More types can be added by defining new templates in the <code>src/themes/default/templates</code> directory.</p>
+<h1>Template text</h1>
+<p>We provide typical text template for conference events happening at MPIA or the HdA, and Ringberg.
+Feel free to submit a pull request if you want these to be updated or if you want to add more templates.</p>
+<h1>Generating website</h1>
+<h2>Offline</h2>
+<h3>Python dependencies</h3>
+<p>You first need to install the python dependencies which come with this package (<code>markdown</code> and <code>pyyaml</code>)</p>
+<pre><code class="language-bash">pip install .
+</code></pre>
+<h3>Compile the website</h3>
+<p>Then you only need to run the <code>Makefile</code> in the <code>docs</code> directory:</p>
+<pre><code class="language-bash">make html
+</code></pre>
+<h3>Serve locally</h3>
+<p>Especially when drafting content, being able to quickly serve the content of the site locally is useful.</p>
+<pre><code class="language-bash">python -m http.server --directory=&quot;docs/_build/html&quot;
+</code></pre>
+<h2>Hosted by GitHub Pages</h2>
+<p>In your repository settings, you need to setup the <code>Pages</code> options.</p>
+<p>Set the branch to <code>gh-pages</code> and save.</p>
+<p>The github action script automatically compiles the site into this branch every time a push is performed.</p>
+            </div>
+        </div>
+    </div>
+</section><!-- Section template -->
+<section id="section-overview" class="section-wrapper overview gray-bg">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h1> Overview </h1>
+            </div>
+            <div class="col-md-12">
+                    <p>The workshop's theme is the Gaia selection function and how to use it. This event will be a three-day workshop and unconference, where we will discuss and learn from each other about the finer details of the Gaia selection function and how to build and use it in various contexts. Participants will be working with the new GaiaUnlimited selection function tools, for which we will assist as needed, and we will improve them based on the feedback we'll receive. We hope this workshop could lead to some new collaborations or initial joint studies. We want to dedicate a significant amount of time to unconference sessions and informal discussions.</p>
+<p><a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home"><img width="100px" src="https://gaia-unlimited.org/wp-content/uploads/2021/06/EU-Logo_400x267.png" style="float:left;margin-right:1rem;"></a>
+<em>This workshop is partially funded by the European Union’s Horizon 2020 research and innovation program under grant agreement No 101004110.</em></p>
+            </div>
+        </div>
+    </div>
+</section><!-- Section template -->
+<section id="section-organizers" class="section-wrapper organizers ">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h1> Organizers </h1>
+            </div>
+            <div class="col-md-12">
+                    <div class="col-md-12" style="text-align:center;">
+<p><a href="https://www.mpia.de"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Max-Planck-Institut_f%C3%BCr_Astronomie_Logo.svg" alt="venue" width=250px"></a></p>
+<p><a href="http://www.mpia.de/institute/research-and-development/data-science">The Data Science Team</a></p>
 <ul>
-  <li><a href="#">Documentation overview</a><ul>
-  </ul></li>
+<li>Ivelina Momcheva</li>
+<li>Morgan Fouesneau</li>
 </ul>
+<p><a href="https://mpia-institute.slack.com/messages/data-science" aria-label=envelope>
+<i class="fa-brands fa-slack" style="font-size:36px;"></i>
+</a>
+<a href="https://github.com/mpi-astronomy" aria-label=envelope>
+<i class="fa-brands fa-github" style="font-size:36px;"></i></i>
+</a>
+<a href="" aria-label=envelope>
+<i class="fas fa-envelope big-icon" style="font-size:36px;"></i>
+</a></p>
 </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="Go" />
-    </form>
-    </div>
-</div>
-<script>$('#searchbox').show(0);</script>
-
-
-
-
-
-
-
-
+            </div>
         </div>
-      </div>
-      <div class="clearer"></div>
     </div>
-    <div class="footer">
-      &copy;2019, sphinx-action Test Suite.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.4</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
-      
-      |
-      <a href="_sources/index.rst.txt"
-          rel="nofollow">Page source</a>
+</section><!-- Section template -->
+<section id="section-participants" class="section-wrapper participants gray-bg">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h1> Participants </h1>
+            </div>
+            <div class="col-md-12">
+                    <p><i class="fa-solid fa-people-group"></i> The registration is <strong>closed</strong>.</p>
+<p><i class="fa-solid fa-envelope-open-text"></i> Participants notified on <strong>July 14</strong>.</p>
+<h2><i class="fa-solid fa-circle-check"></i> Participation confirmation by <strong>Aug 15</strong>.</h2>
+<ul>
+<li>There are no registration fees to participate to this workshop. (See logistics)</li>
+</ul>
+<p><i class="fa-solid fa-file-shield"></i> Any personal data you provide will be processed in accordance with the Max Planck Institute for Astronomy <a href="http://www.mpia.de/privacy-policy">privacy policy</a>.</p>
+<p><em>We will later list here the participants of the workshop, and we will add a group picture.</em></p>
+            </div>
+        </div>
     </div>
+</section><!-- Section template -->
+<section id="section-speakers" class="section-wrapper speakers ">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h1> Speakers </h1>
+            </div>
+            <div class="speaker-list">
+                    
+<div class="speaker-item">
+    <img src="https://demo.gethugothemes.com/eventre/site/images/speakers/speaker-one.jpg" style="height:150px">
+    <h4>Jane Doe</h4>
+    <p>Anomymous Inst.</p>
+</div>
 
-    
+<div class="speaker-item">
+    <img src="https://demo.gethugothemes.com/eventre/site/images/speakers/speaker-two.jpg" style="height:150px">
+    <h4>John Watson</h4>
+    <p>Holmes Inst.</p>
+</div>
 
-    
-  </body>
+<div class="speaker-item">
+    <img src="https://demo.gethugothemes.com/eventre/site/images/speakers/speaker-three.jpg" style="height:150px">
+    <h4>Elizabeth Brown</h4>
+    <p>Color Uni.</p>
+</div>
+
+<div class="speaker-item">
+    <img src="https://demo.gethugothemes.com/eventre/site/images/speakers/speaker-four.jpg" style="height:150px">
+    <h4>Nicolas Volta</h4>
+    <p>Supelec</p>
+</div>
+
+<div class="speaker-item">
+    <img src="https://demo.gethugothemes.com/eventre/site/images/speakers/speaker-five.jpg" style="height:150px">
+    <h4>Jake Peralta</h4>
+    <p>NYU</p>
+</div>
+
+<div class="speaker-item">
+    <img src="https://demo.gethugothemes.com/eventre/site/images/speakers/speaker-six.jpg" style="height:150px">
+    <h4>Miranda Smith</h4>
+    <p>Iron inst.</p>
+</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--
+<div class="speaker-item">
+    <img src="{{headshot}}" style="height:150px">
+    <h4>speakers</h4>
+    <p></p>
+</div>
+--><section id="section-programme" class="section-wrapper programme gray-bg">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h1> Programme </h1>
+            </div>
+            <div class="col-md-12">
+                <p><i class="fa-regular fa-calendar" style="font-size:26px";></i> <em>The program is a template and will be updated soon.</em></p>
+                <h2 id="day-Tuesday">Tuesday</h2>
+08:30 - 09:00 <font color="0080FF">Participants arrival</font> <br>
+<span style="display:inline-block; width: 6em;"></span><i>Registration, name tags, etc.</i><br>
+09:00 - 09:10 <font color="0080FF">boot-up</font> <br>
+<span style="display:inline-block; width: 6em;"></span><i>Welcome and opening remarks</i><br>
+09:10 - 10:40 <font color="0080FF">Pitch cards</font> <br>
+<span style="display:inline-block; width: 6em;"></span><i>Individual one slide introductions</i><br>
+10:40 - 11:00 <font color="0080FF">Coffee break</font> <br>
+11:00 - 12:00 <font color="0080FF">Session 1</font> <br>
+<span style="display:inline-block; width: 6em;"></span><i>Session 2</i><br>
+<span style="display:inline-block; width: 6em;"></span><i>with multiple line description</i><br>
+12:00 - 13:00 <font color="0080FF">Lunch break</font> <br>
+13:00 - 13:50 <font color="0080FF">Session 3</font> <br>
+<span style="display:inline-block; width: 6em;"></span><i>Session 4</i><br>
+13:50 - 14:00 <font color="0080FF">Daily Unconference Planning</font> <br>
+<span style="display:inline-block; width: 6em;"></span><i>Unconference topic selection and room allocation</i><br>
+14:00 - 15:50 <font color="0080FF">Unconference and Tutorials</font> <br>
+<span style="display:inline-block; width: 6em;"></span><i>This session will include a tutorial</i><br>
+15:50 - 16:10 <font color="0080FF">Coffee break</font> <br>
+15:10 - 17:30 <font color="0080FF">Unconference and Tutorials</font> <br>
+<span style="display:inline-block; width: 6em;"></span><i>Selected topics &amp; tutorials</i><br>
+17:30 - 18:00 <font color="0080FF">Wrap-up</font> <br>
+<span style="display:inline-block; width: 6em;"></span><i>Reports on the unconference sessions. Sharing results and feedback.</i><br>
+18:00 - Bus departure <br>
+<h2 id="day-Wednesday">Wednesday</h2>
+09:00 - 09:10 <font color="0080FF">boot-up</font> <br>
+<span style="display:inline-block; width: 6em;"></span><i>Welcome and opening remarks</i><br>
+09:10 - 10:30 <font color="0080FF">Session 4</font> <br>
+<span style="display:inline-block; width: 6em;"></span><i>Anyone can present something, a stack of plots is sufficient.</i><br>
+10:30 - 11:00 <font color="0080FF">Coffee break</font> <br>
+11:00 - 12:00 <font color="0080FF">Session 5</font> <br>
+<span style="display:inline-block; width: 6em;"></span><i>Content TBD</i><br>
+12:00 - 12:10 <font color="0080FF">Daily unconference planning</font> <br>
+<span style="display:inline-block; width: 6em;"></span><i>Unconference topic selection and room allocation</i><br>
+12:10 - 13:00 <font color="0080FF">Lunch break</font> <br>
+13:00 - 16:00 <font color="0080FF">Unconference and Tutorials</font> <br>
+<span style="display:inline-block; width: 6em;"></span><i>TBD</i><br>
+16:00 - 16:30 <font color="0080FF">Coffee break</font> <br>
+16:30 - 17:30 <font color="0080FF">Session 5 - Contributed Talks (2)</font> <br>
+<span style="display:inline-block; width: 6em;"></span><i>TBD</i><br>
+17:30 - 18:00 <font color="0080FF">Wrap-up</font> <br>
+<span style="display:inline-block; width: 6em;"></span><i>Reports on the unconference sessions. Sharing results and feedback.</i><br>
+18:00 - Bus departure <br>
+            </div>
+        </div>
+    </div>
+</section><!-- Section template -->
+<section id="section-venue-mpia" class="section-wrapper venue-mpia ">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h1> Venue </h1>
+            </div>
+            <div class="col-md-12">
+                    <p>The workshop will be held at the Haus der Astronomie (HdA) at <a href="http://www.mpia.de/en/">MPIA</a> in Heidelberg. HdA is the Center for Astronomy Education and Outreach in Heidelberg; more information about the center and its facilities and resources <a href="http://www.haus-der-astronomie.de/">here</a>.</p>
+<h2>Accessibility</h2>
+<p>HdA is accessible to disabled persons, and dedicated parking spaces are available. Unfortunately, the buses dedicated to the event and public transportations may not be accessible for everyone. However, there are specific taxi services in Heidelberg that we can arrange on-demand. Don't hesitate to contact us if you need any assistance or have any questions.</p>
+<p>Note that mobile phone connectivity at/around the HdA is at best poor but usually non-existent.</p>
+<p><img src="static/img/hda.jpeg" alt="venue" width=360px style="float: right;"></p>
+<h2>Address</h2>
+<p><strong>Max Planck Institute for Astronomy</strong></p>
+<p>Königstuhl 17</p>
+<p>69117 Heidelberg, Germany</p>
+<p><a href="https://goo.gl/maps/pFR9gC1XdBXY6EtY7"><i class="fa-solid fa-map-location-dot" style="font-size:48px;"></i></a></p>
+            </div>
+        </div>
+    </div>
+</section><!-- Section template -->
+<section id="section-logistics" class="section-wrapper logistics gray-bg">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h1> Logistics </h1>
+            </div>
+            <div class="col-md-12">
+                    <p>The workshop will start at 09:00 on Tuesday, September 13 2022, and finish at 16:00 on Thursday, September 15 2022.</p>
+<p>There will be a dedicated bus to bring participants from the town to the workshop venue (see details under travel below).
+Participants are responsible for organizing their travel to Heidelberg and should make their own accommodation arrangements (see below).</p>
+<h2><i class="fa-solid fa-coins"></i> Financial</h2>
+<p>There is no conference fee. All events happening at the venue (coffee breaks, lunches, reception) are covered, but we cannot offer travel or lodging support.</p>
+<h2><i class="fa-solid fa-baby"></i> Childcare</h2>
+<p>If you need help with childcare arrangements, don't hesitate to contact us.</p>
+<h2><i class="fa-solid fa-drumstick-bite"></i> Lunches &amp; Coffee Breaks</h2>
+<p>The workshop provides lunch and coffee breaks at the venue on all workshop days. Vegetarian options will be available (no need to pre-order). If you have any additional dietary requirements (and may not have indicated so in your registration form), please email <a href="mailto:NULL">THIS PERSON</a> well in advance. We will do our best to meet your needs, but we cannot guarantee that we will cater to every request.</p>
+<h2><i class="fa-solid fa-champagne-glasses"></i> Workshop dinner</h2>
+<p>To foster interactions between participants, we will be providing a reception buffet dinner on Wednesday evening at the venue.</p>
+<p><em>We will adapt the bus schedule accordingly.</em></p>
+<h2><i class="fa-solid fa-universal-access"></i> Accessibility</h2>
+<p>We are committed to providing an accessible environment for all participants. If you need help or arrangements, don't hesitate to contact the organizers.</p>
+<p>Participants will pay attention not to leave out information for some people in your audience.
+Some of us might not be able to see well, hear well, move well, speak well, or understand information presented in some ways well or at all.
+Everyone at the event will be open to diversity in the audience and any accessibility issues.
+The <a href="https://www.w3.org/WAI/teach-advocate/accessible-presentations/">Web Accessibility Initiative</a> provides some information &amp; directions.</p>
+<h2><i class="fa-solid fa-bed"></i> Accommodation</h2>
+<p>Participants are responsible for making their own accommodation arrangements. Heidelberg has plenty of hotel and Airbnb options; the following hotels are some suggestions (but we don't endorse any particular hotel).</p>
+<ul>
+<li><a href="https://4-jahreszeiten.de/">Hotel Vier Jahreszeiten</a>, Haspelgasse 2, Heidelberg</li>
+<li><a href="https://www.hotel-goldene-rose.de/en-gb/home">Hotel Goldene Rose</a>, St. Anna Gasse 7, Heidelberg</li>
+<li><a href="https://hotel-anlage.de/?lang=en">Hotel Anlage</a>, Friedrich-Ebert-Anlage 32, Heidelberg</li>
+<li><a href="https://www.hotel-monpti.de/en">Hotel Monpti</a>, Friedrich-Ebert-Anlage 57, Heidelberg</li>
+<li><a href="http://www.denner-hotel.de/">Denner Hotel</a>, Bergheimer Straße 8, Heidelberg</li>
+<li><a href="http://www.guesthouse-hd.de/ghouse/website.nsf/index.html?openpage&amp;L=2">GuestHouse Heidelberg</a>, Bergheimer Straße 24, Heidelberg</li>
+<li><a href="https://www.bergheim41.de/?lang=en">Bergheim 41</a>, Bergheimer Straße 41, Heidelberg</li>
+<li><a href="https://www.leonardo-hotels.com/leonardo-hotel-heidelberg-city-center">Leonardo Hotel</a>, Bergheimer Straße 63, Heidelberg</li>
+<li><a href="https://www.qube-hotel-heidelberg.de/qubef/indexen.html">Qube Hotel</a>, Bergheimer Straße 74, Heidelberg</li>
+<li><a href="https://www.nh-hotels.com/hotel/nh-heidelberg">Hotel NH</a>, Bergheimer Straße 91, Heidelberg</li>
+</ul>
+<p><em>don't hesitate to contact us if you have any questions</em>.</p>
+<h2><i class="fa-solid fa-comments"></i> Communications</h2>
+<p>This workshop is an in-person event. In addition, we will use:</p>
+<ul>
+<li><a href="https://gaiaunlimited-events.slack.com" aria-label=envelope> <i class="fa-brands fa-slack"></i> event slack workspace</a>,</li>
+<li><a href="https://github.com/gaia-unlimited" aria-label=envelope> <i class="fa-brands fa-github" ></i></i> GaiaUnlimited GitHub</a>.</li>
+</ul>
+            </div>
+        </div>
+    </div>
+</section><!-- Section template -->
+<section id="section-travel-mpia" class="section-wrapper travel-mpia ">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h1> Travel </h1>
+            </div>
+            <div class="col-md-12">
+                    <h2><i class="fa-solid fa-road-barrier"></i> Visa</h2>
+<p>You may need to apply for a visa to enter Germany. See this overview of <a href="http://www.mpia.de/en/services/information-for-guests/before-arrival">visa requirements</a>.</p>
+<p>Feel free to contact the organizers if you need a letter of support.</p>
+<h2><i class="fa-solid fa-triangle-exclamation"></i> Travel restrictions</h2>
+<p>While travel is now possible, there are still many continuously changing restrictions. We'll do our best to provide support and information.</p>
+<p>Entry to Germany is limited to nationals from EU member states, Switzerland, Liechtenstein, Norway, Iceland, and those vaccinated with <a href="https://covid19.trackvaccines.org/country/germany/">vaccines approved in Germany</a>. Exceptions are possible for <a href="https://www-bmi-bund-de.translate.goog/SharedDocs/faqs/DE/themen/bevoelkerungsschutz/coronavirus/reisebeschraenkungen-grenzkontrollen/IV-reisebeschraenkungen-im-aussereuropaeischen-luft-und-seeverkehr-einreisen-aus-drittstaat/welche-fachkraefte-und-hoch-qualifizierte-arbeitnehmer-duerfen-einreisen.html?_x_tr_sl=de&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">researchers and scientists</a>, but we recommend checking with your local German embassy to confirm if these apply to you. Travelers are obligated to provide evidence of a negative COVID-19 PCR test and proof of vaccination or recovery upon entering the country. Additionally, MPIA and HdA are currently operating under 2G rules whereby only vaccinated (with a Germany-approved vaccine) or recovered individuals are allowed on the premises. We will continue to update this information, and please check with a German embassy for specific restrictions and visa requirements based on your location and citizenship.</p>
+<h2>Getting to Heidelberg</h2>
+<h3><i class="fa-solid fa-plane"></i> Flight</h3>
+<p>We recommend flying to Frankfurt Airport (FRA), as this is the nearest international airport to Heidelberg. The following directions to Heidelberg assume that you are starting from Frankfurt.</p>
+<p>Deutsche Bahn (DB) has connections from Frankfurt Airport (station: Frankfurt(M) Flughafen Fernbahnhof) to various train stations around Heidelberg (likely either Hauptbanhof or Altstadt, depending on where your hotel is). Typically you will take a train to Mannheim and change platforms there for the S-Bahn to Heidelberg. The total travel time is of the order of one hour.
+Tickets cost about 25 € each way. The timetable is available <a href="https://www.bahn.com/en/view/index.shtml">here</a>. You can buy a ticket in advance, but we don't recommend the cheaper "saver" tickets, as these apply to the specific booked train -- You cannot use them on a different train if you have flight delays.</p>
+<p>The two best shuttle options are <a href="https://www.tls-heidelberg.de/en/">Transfer &amp; Limousine Service (TLS)</a> (40 € each way) and <a href="https://www.lufthansa.com/de/en/Lufthansa-Express-Shuttle">Lufthansa Express Shuttle</a> (25 € each way).</p>
+<h3><i class="fa-solid fa-train"></i> Train</h3>
+<p><a href="https://www.bahn.com/en/view/index.shtml">Deutsche Bahn (DB)</a> has connections to various train stations around Heidelberg (likely either Hauptbanhof or Altstadt, depending on where your hotel is). Typically you will have a connection in Mannheim and change platforms there for the S-Bahn to Heidelberg. <a href="https://www.thetrainline.com/">Trainline</a> could also help you plan your journey across multiple countries and train companies.</p>
+<p>Although there are no barier gates in Germany, you will need to buy a ticket before stepping into the trains. The controls are frequent. You can buy tickets online or at ticket machines or for S-Bahn (and local buses) on the <a href="https://www.vrn.de/service/apps/etarif/index.html">eVRN app</a>.</p>
+<h3><i class="fa-solid fa-bus"></i> Bus</h3>
+<p>A cheaper but slower alternative is the "Flixbus" from the airport to Heidelberg. The prices range from 5 to 15 € each way, but depending on the time of day, the trip could take up to three hours due to stops and traffic. To investigate timetables and book tickets, you can check out the <a href="https://www.flixbus.com/">Flixbus website</a>.</p>
+<h3><i class="fa-solid fa-road"></i> Driving directions</h3>
+<p>If you decide to rent a car and drive, you can follow <a href="https://www.google.com/maps/dir/Frankfurt+Airport,+Frankfurt,+Germany/Max-Planck-Institut+f%C3%BCr+Astronomie,+K%C3%B6nigstuhl+17,+69117+Heidelberg/@49.7240731,8.3527948,10z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47bd0b745442f979:0x8a74d84d21f8f331!2m2!1d8.5621518!2d50.0379326!1m5!1m1!1s0x4797c04e5257640d:0x7a5e759cc166d6bf!2m2!1d8.7236247!2d49.3968064!3e0">these directions</a> (to MPIA).</p>
+<h2>Getting to HdA</h2>
+<p>There will be a shuttle to transport participants from the town center up the hill to MPIA/HdA every morning. It will leave from <a href="https://www.google.com/maps/place/Hotel+NH+Heidelberg/@49.407697,8.6806093,17z/data=!3m1!4b1!4m8!3m7!1s0x4797c1205993432d:0x92b8113bd142134d!5m2!4m1!1i2!8m2!3d49.407697!4d8.682798">Hotel NH</a> on Bergheimer Strasse at 08:15 (bus/company name "discipulus"). It will then stop briefly to pick up at <a href="https://www.google.de/maps/place/Peterskirche/@49.4087233,8.7047502,17.85z/data=!4m5!3m4!1s0x4797c103fc64910d:0xc8f660bad39fe450!8m2!3d49.408916!4d8.705417?hl=en">Peterskirche</a> (the stop on the south side of the road, i.e., the one closest to the hill) at 08:20 (the bus might only arrive five minutes later here, but be there no later than 08:20 as the bus cannot wait). A local participant will be at each pick-up point and travel on the bus. A bus will bring participants back into town (the same two stops) after each day's workshop.</p>
+<p><a href="https://www.google.com/maps/dir/Hotel+NH+Heidelberg,+Bergheimer+Str.+91,+69115+Heidelberg/49.4089253,8.7051327/Max-Planck-Institut+f%C3%BCr+Astronomie,+K%C3%B6nigstuhl,+Heidelberg/@49.4049805,8.7016122,16.19z/data=!4m15!4m14!1m5!1m1!1s0x4797c1205993432d:0x92b8113bd142134d!2m2!1d8.682798!2d49.407697!1m0!1m5!1m1!1s0x4797c04e5257640d:0x7a5e759cc166d6bf!2m2!1d8.7231418!2d49.3969229!3e0"><i class="fa-solid fa-route"></i> Workshop bus itinerary</a></p>
+<p>At other times of the day, you can take Bus 30 - the "Science Bus" - <a href="https://www.rnv-online.de/media/rnv-online.de/Fahrtinfo/Fahrplaene/Aushangfahrplaene_2020/02030P_1_01198_11.pdf">up to MPIA</a> (the bus will drop you off right outside HdA) or <a href="https://www.rnv-online.de/media/rnv-online.de/Fahrtinfo/Fahrplaene/Aushangfahrplaene_2020/02030P_2_01175_11.pdf">back down the hill</a> (you probably want to get off at <a href="https://www.google.com/maps/place/Peterskirche/@49.4089407,8.7040163,17.91z/data=!4m5!3m4!1s0x4797c103fc64910d:0xc8f660bad39fe450!8m2!3d49.408916!4d8.705417">Peterskirche</a>). A map of the entire bus/tram network is <a href="https://www.rnv-online.de/fileadmin/user_upload/downloads/Plaene/Liniennetzplaene/Liniennetzplan_HD.pdf">here</a> (the MPIA is slightly below and right of the center). You can buy tickets online or at ticket machines or (if that fails) from the driver on the bus (the cost is approximately 2.50 € each way) or on the <a href="https://www.vrn.de/service/apps/etarif/index.html">eVRN app</a>. Note that where the Science Bus departs - Universitätsplatz - to go up to MPIA is not far from Peterskirche. There is also a taxi stand near there if all else fails.</p>
+<h2><i class="fa-brands fa-wpexplorer"></i> Exploring Heidelberg</h2>
+<p>The easiest way to explore Heidelberg is by foot. The Rhein-Neckar-Verkehr (RNV) provides public transportation in Heidelberg with buses and trams; these can take you more or less anywhere you want to go within the city. The timetables can be found <a href="https://www.rnv-online.de/fahrplaene.html">online</a>; you can also download various apps to help you plan, e.g., the official RNV app (in german) or the <a href="https://www.rnv-online.de/tickets/tickets-kaufen/handy-ticket.html">RNV Ticket app</a>, and the <a href="https://www.vrn.de/service/apps/etarif/index.html">eVRN app</a> (in English). Note that Google Maps can also provide bus schedules.</p>
+            </div>
+        </div>
+    </div>
+</section><!-- Section template -->
+<section id="section-code-of-conduct" class="section-wrapper code-of-conduct gray-bg">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h1> Code of conduct </h1>
+            </div>
+            <div class="col-md-12">
+                    <div style="text-align:center;">
+<svg aria-hidden="true" height="40" viewBox="0 0 16 16" version="1.1" width="40" data-view-component="true" class="octicon octicon-code-of-conduct mr-2">
+    <path fill-rule="evenodd" d="M8.048 2.241c.964-.709 2.079-1.238 3.325-1.241a4.613 4.613 0 013.282 1.355c.41.408.757.86.996 1.428.238.568.348 1.206.347 1.968 0 2.193-1.505 4.254-3.081 5.862-1.496 1.526-3.213 2.796-4.249 3.563l-.22.163a.75.75 0 01-.895 0l-.221-.163c-1.036-.767-2.753-2.037-4.249-3.563C1.51 10.008.007 7.952.002 5.762a4.614 4.614 0 011.353-3.407C3.123.585 6.223.537 8.048 2.24zm-1.153.983c-.81.78-1.546 1.669-2.166 2.417-.184.222-.358.432-.52.623a.75.75 0 00.04 1.016c.35.35.697.697 1.043 1.047.866.875 2.292.914 3.185.032.264-.26.534-.528.802-.797.694-.694 1.8-.701 2.474-.03L12.92 8.7l.283.284c-.244.334-.515.666-.81.995l-1.384-1.28A.75.75 0 109.99 9.802l1.357 1.252c-.325.31-.656.606-.984.887l-1.48-1.366a.75.75 0 10-1.018 1.102L9.191 12.9c-.433.34-.838.643-1.191.905-1.04-.773-2.537-1.907-3.846-3.242C2.611 8.99 1.502 7.306 1.502 5.75a3.114 3.114 0 01.913-2.335c1.159-1.158 3.23-1.224 4.48-.191zm7.112 4.442c.313-.65.491-1.293.491-1.916v-.001c0-.614-.088-1.045-.23-1.385-.143-.339-.357-.633-.673-.949a3.113 3.113 0 00-2.218-.915c-1.092.003-2.165.627-3.226 1.602-.823.755-1.554 1.637-2.228 2.45l-.127.154.562.566a.756.756 0 001.066.02l.794-.79c1.258-1.258 3.312-1.31 4.594-.032.396.394.792.791 1.173 1.173l.022.023z"></path>
+</svg>
+</div>
+<p>During the community workshop, we require participants to follow the code of conduct for the workshop which can be found below. If you have any questions about the workshop, you can reach the organizing committee.</p>
+<p>The organizers are dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment, abusive behavior, or intimidation of conference participants in any form.  As such, we follow <a href="https://eas.unige.ch/documents/EAS_Ethics_Statement.pdf">the European Astronomical Society Council (EAS) Ethics Statement and Guidelines for Good Practice</a> and expect all participants to read and abide by their statements.</p>
+<p>In addition to a general Code of Conduct and Ethics, all participants must agree with our collaboration policy: i.e., to openly share their ideas, expertise, code, and interim results. Project development will proceed out in the open among participants.</p>
+<p>Participants are encouraged to change gears, start new collaborations, and drop or combine projects. Any participant contributing significantly to a project can expect appropriate credit vessels (e.g., co-authorship).</p>
+<p>We pledge to help the entire community follow the code of conduct, and to not remain silent when we see violations of the code of conduct. We will take action when members of our community violate this code such as notifying a workshop organizer or talking privately with the person.
+This code of conduct applies to all community situations online and offline, including the conference itself, mailing lists, forums, social media, social events associates with the conference, and one-to-one interactions.</p>
+<p>Participants asked to stop any harassing behavior are expected to comply immediately. Attendees violating these rules may be asked to leave the event at the sole discretion of the conference organizers.</p>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- .about-event -->
+
+    <footer class="footer">
+        <div class="copyright-section">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="copytext text-center"><br>
+                        <ul class=network-icon aria-hidden=true>
+                            <li>
+                                <a href=ds@mpia.de}} aria-label=envelope>
+                                    <i class="fas fa-envelope big-icon" style="font-size:36px;"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="copytext text-center">
+                            &copy Conference.
+                            This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+                            <br>
+                        <a href="http://www.mpia.de/imprint" target="_blank">imprint</a>,
+                        <a href="http://www.mpia.de/privacy-policy" target="_blank">privacy policy</a>
+                        <br>
+                        <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+                            <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+                            <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+                            <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+                            <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+                            </a>
+                    </div>
+                </div>
+            </div>
+            <!-- .container -->
+        </div>
+        <!-- .copyright-section -->
+    </footer>
+    <!-- .footer -->
+
+    </div>
+    <!-- #main-wrapper -->
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>
